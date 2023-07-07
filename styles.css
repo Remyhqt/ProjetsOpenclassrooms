@@ -1,0 +1,370 @@
+body {
+    min-width: 320px;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.logo {
+    padding-top: 20px;
+    padding-left: 55px;
+    height: 1.8em;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul.menu {
+    display: flex;
+    font-weight: 500;
+}
+
+ul.menu:hover {
+    font-weight: 500;
+}
+
+li.activités, li.hébergements {
+    width: 9em;
+    text-align: center;
+    padding-top: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+li.hébergements:hover,li.activités:hover, li.hébergements:focus, li.activités:focus, li.hébergements:active , li.activités:active {
+    border-top: 2px blue solid;
+    color: blue;
+}
+
+
+h1 {
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+#recherche {
+    padding-left: 60px;
+    padding-top: 20px;
+}
+
+#recherche p {
+    font-weight: 500;
+    padding-bottom: 22px;
+}
+
+.formulaire {
+    margin-top: 30px;
+}
+
+form {
+    display: flex;
+}
+
+input {
+    padding: 15px;
+    width: 12em;
+    border: 1px solid whitesmoke;
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
+    outline: none;
+    text-align: center;
+}
+
+::placeholder {
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+.fa-location-dot {
+    font-size: 1.2em;
+    padding: 13px;
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.recherche_ordi {
+    background-color: blue;
+    color: white;
+    width: 8em;
+    font-weight: bold;
+    font-size: 1em;
+    border: 0px solid whitesmoke;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.recherche_ordi:hover, .recherche_ordi:focus, .recherche_ordi:active {
+    border: 1px solid whitesmoke;
+}
+
+#filtres_info {
+    margin-top: 15px;
+    padding-left: 55px;
+    padding-top: 30px;
+}
+
+#filtres {   
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+    font-size: 1em;
+    column-gap: 2em;
+}
+
+#titre {
+    padding-top: 15px;
+    margin-left: 8px;
+}
+
+#categories {
+    display: flex;   
+}
+
+.visuel {
+    display: flex;
+    border: 3px solid whitesmoke;
+    border-radius: 35px;
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+#categories p{
+    padding-left: 10px;
+}
+
+.icones {
+    color: blue;
+    font-size: 1.2em;
+    padding-top: 15px;
+}
+
+.visuel:hover, .visuel:active, .visuel:focus{
+    color: blue;
+}
+
+
+#info {
+    display: flex;
+    font-weight: 300;
+    margin-top: 30px;
+    margin-left: 5px;
+}
+
+#texte_info {
+    padding-left: 5px;
+    font-size: 0.8em;
+}
+
+.fa-info {
+    font-size: 0.7em;
+    color: blue;
+    border: 2px solid whitesmoke;
+    border-radius: 50%;
+    margin-right: 8px;
+    padding-top: 10px;
+    padding-left: 15px;
+    height: 24px;
+    width: 20px;
+}
+
+#hebergements_populaire {
+    display: flex;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 40px;
+}
+
+#hebergements {
+    display: flex;
+    flex-direction: column;
+    width: 62%;
+    background-color: whitesmoke;
+    border-radius: 25px;
+    padding: 25px;
+    height: auto;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+#resultats {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#ville {
+    padding-bottom: 15px;
+}
+
+.choix {
+    width: 30%;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+#resultats img{
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.contenu {
+    padding-left: 15px;
+    font-size: 100%;
+    padding-bottom: 15px;
+}
+
+.txt h3 {
+    font-size: 1em;
+}
+
+.txt p {
+    font-size: 0.8em;
+}
+
+.fa-star {
+    font-size: 0.8em;
+    color: blue;
+}
+
+.neutre {
+    color: whitesmoke;
+}
+
+#afficher_plus {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.choix:hover, .choix:active, .choix:focus {
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+#hebergement a:focus, a:active,a:hover {
+    color: blue;
+}
+
+#populaire {
+    width: 32%;
+    background-color: whitesmoke;
+    border-radius: 25px;
+    padding: 25px;
+    margin-left: 45px;
+}
+
+#popu {
+    display: flex;
+    justify-content: space-between;
+}
+
+#resultats_popu {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.choix_popu {
+    display: flex;
+    background-color: white;
+    height: 150px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+#resultats_popu img {
+    width: 35%;
+    height: 150px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-right: 20px;
+    object-fit: cover;
+}
+
+.contenu_popu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.txt_popu h3{
+    font-size: 1em;
+}
+
+.txt_popu p{
+    font-size: 0.8em;
+}
+
+.choix_popu:hover, .choix_popu:active, .choix_popu:focus {
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+#activites {
+    padding-top: 60px;
+    padding-left: 100px;
+}
+
+#titre_activites {
+    padding-bottom: 20px;
+    padding-left: 7px;
+}
+
+#differentes_activites {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    width: 100%;
+}
+
+.act {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid whitesmoke;
+    border-radius: 25px 25px 25px 25px;
+    width: 20%;
+    height: 370px;
+}
+
+.act img {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    object-fit: cover;
+    width: 100%;
+    height: 320px;
+}
+
+.act h3 {
+    padding-left: 20px;
+    font-size: 0.75em;
+}
+
+.act:hover, .act:focus, .act:active {
+    box-shadow: 0px 0px 10px 0px black;
+}

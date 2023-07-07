@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Bookie</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/82b1ffe004.js" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+            <p> 
+               <img src="https://github.com/OpenClassrooms-Student-Center/booki-starter-code/blob/master/images/logo/Booki.png?raw=true" alt="logo" class="logo"/>
+            </p>
+            <ul class="menu">
+                <li class="hébergements">
+                    <a href="#">hébergements</a>
+                </li>
+                <li class="activités">
+                    <a href="#">activités</a> 
+                </li>
+            </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="recherche">
+                <div class="slogan">
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre-ville ou en pleine nature</p>
+                </div>
+
+                <div class="formulaire">                
+                    <form action="#" method="get">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="text" name="destination" placeholder="Marseille, France" class="recherche">
+                        <button type="button" class="recherche_ordi">Rechercher</button>
+                    </form>
+                </div>
+            </section>
+
+            <div id="filtres_info">
+
+                <div id="filtres">
+                    <div id="titre">Filtres</div>
+                    <div id="categories">
+                        <div class="visuel">
+                            <i class="fa-solid fa-money-bill-wave icones"></i>
+                            <p>Economique</p>                        
+                        </div>
+                        <div class="visuel">
+                            <i class="fa-solid fa-person icones"></i>
+                            <p>Familial</p>
+                        </div>
+                        <div class="visuel">
+                            <i class="fa-sharp fa-solid fa-heart icones"></i>
+                            <p>Romantique</p>
+                        </div>
+                        <div class="visuel">
+                            <i class="fa-solid fa-fire icones"></i>
+                            <p>Nos pépites</p>
+                        </div>
+                    </div>
+                </div>        
+
+                <div id="info">
+                    <i class="fa-solid fa-info"></i>
+                    <p id="texte_info">Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+            </div>
+
+            <section id="hebergements_populaire">
+
+                <div id="hebergements">
+                    <div id="ville">
+                        <h2>Hébergements à Marseille</h2>
+                    </div>
+                    <div id="resultats">
+                        <article class="choix">
+                            <img src="https://github.com/OpenClassrooms-Student-Center/booki-starter-code/blob/master/images/hebergements/fred-kleber.jpg?raw=true" alt="hotel du port">
+                            <div class="contenu">
+                                <div class="txt">
+                                    <h3>hôtel du port</h3>
+                                    <p>Nuit à partir de 52€</p>
+                                </div>
+                                <div class="etoiles">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star neutre"></i>
+                                </div>
+                            </div> 
+                        </article>
+                        <article class="choix">
+                            <img src="https://github.com/OpenClassrooms-Student-Center/booki-starter-code/blob/master/images/hebergements/febrian-zakaria.jpg?raw=true" alt="hotel chez amina">
+                            <div class="contenu">
+                                <div class="txt">
+                                    <h3>hôtel chez Amina</h3>
+                                    <p>Nuit à partir de 96€</p>
+                                </div>
+                                <div class="etoiles">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star neutre"></i>
+                                </div>
+                            </div> 
+                        </article>
+                        <article class="choix">
+                            <img src="https://github.com/OpenClassrooms-Student-Center/booki-starter-code/blob/master/images/hebergements/reisetopia.jpg?raw=true" alt="hotel les mouettes">
+                            <div class="contenu">
+                                <div class="txt">
+                                    <h3>hôtel Les Mouettes</h3>
+                                    <p>Nuit à partir de 76€</p>
+                                </div>
+                                <div class="etoiles">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star neutre"></i>
+                                </div>
+                            </div> 
+                        </article>
+                        <article class="choix">
+                            <img src="https://github.com/OpenClassrooms-Student-Center/booki-starter-code/blob/master/images/hebergements/annie-spratt.jpg?raw=true" alt="hotel de la mer">
+                            <div class="contenu">
+                                <div class="txt">
+                                    <h3>hôtel de la mer</h3>
+                                    <p>Nuit à partir de 46€</p>
+                                </div>
+                                <div class="etoiles">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star neutre"></i>
+                                </div>
+                            </div> 
+                        </article>
+                        <article class="choix">
+                            <img src="https://github.com/OpenClassrooms-Student-Center/booki-starter-code/blob/master/images/hebergements/marcus-loke.jpg?raw=true" alt="auberge la canebiere">
+                            <div class="contenu">
+                                <div class="txt">
+                                    <h3>Auberge La Canebière</h3>
+                                    <p>Nuit à partir de 25€</p>
+                                </div>
+                                <div class="etoiles">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star neutre"></i>
+                                </div>
+                            </div> 
+                        </article>
+                        <article class="choix">
+                            <img src="https://github.com/OpenClassrooms-Student-Center/booki-starter-code/blob/master/images/hebergements/nicate-lee.jpg?raw=true" alt="auberge le panier">
+                            <div class="contenu">
+                                <div class="txt">
+                                    <h3>Auberge Le Panier</h3>
+                                    <p>Nuit à partir de 23€</p>
+                                </div>
+                                <div class="etoiles">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star neutre"></i>
+                                </div>
+                            </div> 
+                        </article>
+                        <div id="afficher_plus"> <a href="#">Afficher plus</a></div>
+                    </div>
+                </div>
+
+                <div id="populaire">
+                    <div id="popu">
+                        <h2>Les plus populaires</h2>
+                        <i class="fa-solid fa-chart-line-up"></i>
+                    </div>
+                    <div id="resultats_popu">
+                        <article class="choix_popu">
+                            <img src="https://github.com/OpenClassrooms-Student-Center/booki-starter-code/blob/master/images/hebergements/emile-guillemot.jpg?raw=true" alt="auberge la canebiere">
+                            <div class="contenu_popu">
+                                <div class="txt_popu">
+                                    <h3>Auberge La Canebière</h3>
+                                    <p>Nuit à partir de 25€</p>
+                                </div>
+                                <div class="etoiles_popu">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star neutre"></i>
+                                </div>
+                            </div> 
+                        </article>
+                        <article class="choix_popu">
+                            <img src="https://github.com/OpenClassrooms-Student-Center/booki-starter-code/blob/master/images/hebergements/aw-creative.jpg?raw=true" alt="au coeur de l'eau">
+                            <div class="contenu_popu">
+                                <div class="txt_popu">
+                                    <h3>Chambres d'hôtes Au coeur de l'eau</h3>
+                                    <p>Nuit à partir de 71€</p>
+                                </div>
+                                <div class="etoiles_popu">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star neutre"></i>
+                                </div>
+                            </div> 
+                        </article>
+                        <article class="choix_popu">
+                            <img src="https://github.com/OpenClassrooms-Student-Center/booki-starter-code/blob/master/images/hebergements/febrian-zakaria2.jpg?raw=true" alt="hotel bleu et blanc">
+                            <div class="contenu_popu">
+                                <div class="txt_popu">
+                                    <h3>hôtel Bleu et Blanc</h3>
+                                    <p>Nuit à partir de 68€</p>
+                                </div>
+                                <div class="etoiles_popu">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star neutre"></i>
+                                </div>
+                            </div> 
+                        </article>
+                    </div>
+                </div>
+            </section>
+  
+            <section id="activites">
+
+                <div id="titre_activites">
+                    <h2>Activités à Marseille</h2>
+                </div>
+                <div id="differentes_activites">
+                    <div class="act">
+                        <a href="#">
+                            <img src="https://github.com/OpenClassrooms-Student-Center/booki-starter-code/blob/master/images/activites/reno-laithienne.jpg?raw=true" alt="vieux-port">
+                        </a>
+                        <h3 class="titre_act">Vieux-Port</h3>
+                    </div>
+                    <div class="act">
+                        <a href="#">
+                            <img src="https://github.com/OpenClassrooms-Student-Center/booki-starter-code/blob/master/images/activites/paul-hermann.jpg?raw=true" alt="fort de pomegues">
+                        </a>
+                        <h3 class="titre_act">Fort de Pomègues</h3>
+                    </div>
+                    <div class="act">
+                        <a href="#">
+                            <img src="https://github.com/OpenClassrooms-Student-Center/booki-starter-code/blob/master/images/activites/kilyan-sockalingum.jpg?raw=true" alt="parc national des calanques">
+                        </a>
+                        <h3 class="titre_act">Parc National des Calanques</h3>
+                    </div>
+                    <div class="act">
+                        <a href="#">
+                            <img src="https://github.com/OpenClassrooms-Student-Center/booki-starter-code/blob/master/images/activites/florian-wehde.jpg?raw=true" alt="notre-dame-de-la-garde">
+                        </a>
+                        <h3 class="titre_act">Notre-Dame-de-la-Garde</h3>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </body>
+</html>
