@@ -10,6 +10,9 @@ header {
 body {
     min-width: 320px;
     font-family: 'Raleway', sans-serif;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0;
 }
 
 nav {
@@ -21,7 +24,6 @@ nav {
 .logo {
     margin-top: 10px;
     padding-top: 30px;
-    padding-left: 60px;
     height: 1.8em;
 }
 
@@ -29,9 +31,14 @@ li {
     list-style-type: none;
 }
 
+li.hébergements {
+    padding-left: 20px;
+}
+
 ul.menu {
     display: flex;
     font-weight: 500;
+    margin-right: -40px;
 }
 
 ul.menu:hover {
@@ -64,7 +71,6 @@ h1 {
 }
 
 #recherche {
-    padding-left: 60px;
     padding-top: 20px;
 }
 
@@ -102,6 +108,8 @@ input {
 .fa-location-dot {
     font-size: 1.2em;
     padding: 13px;
+    padding-left: 18px;
+    padding-right: 18px;
     border: 1px solid whitesmoke;
     background-color: whitesmoke;
     border-top-left-radius: 12px;
@@ -123,9 +131,12 @@ input {
     border: 1px solid whitesmoke;
 }
 
+.recherche_mobile {
+    display: none;
+}
+
 #filtres_info {
     margin-top: 15px;
-    padding-left: 55px;
     padding-top: 30px;
 }
 
@@ -150,8 +161,8 @@ input {
     display: flex;
     border: 3px solid whitesmoke;
     border-radius: 35px;
-    margin-left: 20px;
-    padding-left: 20px;
+    margin-right: 15px;
+    padding-left: 18px;
     padding-right: 20px;
 }
 
@@ -180,6 +191,8 @@ input {
 #texte_info {
     padding-left: 5px;
     font-size: 0.8em;
+    margin: 0;
+    margin-top: 8px;
 }
 
 .fa-info {
@@ -188,30 +201,28 @@ input {
     border: 2px solid whitesmoke;
     border-radius: 50%;
     margin-right: 8px;
-    padding-top: 10px;
-    padding-left: 15px;
-    height: 24px;
-    width: 20px;
+    padding-top: 6px;
+    padding-left: 12px;
+    height: 20px;
+    width: 15px;
 }
 
 #hebergements_populaire {
     display: flex;
-    padding-left: 60px;
-    padding-right: 60px;
     margin-top: 40px;
 }
 
 #hebergements {
     display: flex;
     flex-direction: column;
-    width: 62%;
+    width: 70%;
     background-color: whitesmoke;
     border-radius: 25px;
-    padding: 25px;
+    padding: 20px;
 }
 
 h2 {
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 #resultats {
@@ -228,37 +239,42 @@ h2 {
 
 .choix {
     width: 30%;
-    margin-bottom: 30px;
     background-color: white;
-    padding: 8px;
+    padding: 3px;
     border-radius: 20px;
     box-shadow: 0px 3px 20px 0px grey;
+    margin-bottom: 30px;
 }
 
 #resultats img{
     width: 100%;
-    height: 130px;
+    height: 108px;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
 .contenu {
-    padding-left: 15px;
-    font-size: 100%;
-    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-bottom: 5px;
 }
 
 .txt h3 {
-    font-size: 1em;
+    font-size: 0.7em;
+    font-weight: 900;
+    margin: 0;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 .txt p {
-    font-size: 0.8em;
+    font-size: 0.6em;
+    margin: 0;
+    padding-bottom: 5px;
 }
 
 .fa-star {
-    font-size: 0.8em;
+    font-size: 0.7em;
     color: blue;
 }
 
@@ -267,8 +283,9 @@ h2 {
 }
 
 #afficher_plus {
-    font-size: 1em;
-    font-weight: bold;
+    font-size: 0.8em;
+    font-weight: 700;
+    padding-top: 5px;
 }
 
 .choix:hover, .choix:active, .choix:focus {
@@ -280,16 +297,23 @@ h2 {
 }
 
 #populaire {
-    width: 32%;
+    width: 30%;
     background-color: whitesmoke;
     border-radius: 25px;
-    padding: 25px;
-    margin-left: 45px;
+    padding: 20px;
+    margin-left: 30px;
+}
+
+.fa-chart-line {
+    color: blue;
+    font-size: 1em;
+    padding-top: 14px;
 }
 
 #popu {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 15px;
 }
 
 #resultats_popu {
@@ -301,36 +325,40 @@ h2 {
 .choix_popu {
     display: flex;
     background-color: white;
-    height: 150px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding: 8px;
+    padding: 3px;
     border-radius: 20px;
     box-shadow: 0px 3px 20px 0px grey;
+    margin-bottom: 20px;
 }
 
 #resultats_popu img {
     width: 35%;
-    height: 150px;
+    height: 125px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    padding-right: 20px;
+    padding-right: 10px;
     object-fit: cover;
 }
 
 .contenu_popu {
     display: flex;
     flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 5px;
     justify-content: space-between;
-    padding-bottom: 10px;
 }
 
 .txt_popu h3{
-    font-size: 1em;
+    margin: 0;
+    font-size: 0.7em;
+    padding-bottom: 8px;
+    padding-right: 5px;
 }
 
 .txt_popu p{
-    font-size: 0.8em;
+    margin: 0;
+    font-size: 0.6em;
+    padding-bottom: 40px;
 }
 
 .choix_popu:hover, .choix_popu:active, .choix_popu:focus {
@@ -339,7 +367,6 @@ h2 {
 
 #activites {
     padding-top: 60px;
-    padding-left: 100px;
 }
 
 #titre_activites {
@@ -350,7 +377,7 @@ h2 {
 #differentes_activites {
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    justify-content: space-between;
     width: 100%;
 }
 
@@ -359,7 +386,7 @@ h2 {
     flex-direction: column;
     border: 1px solid whitesmoke;
     border-radius: 25px 25px 25px 25px;
-    width: 20%;
+    width: 23%;
     height: 370px;
     box-shadow: 0px 3px 20px 0px grey;
 }
@@ -373,10 +400,9 @@ h2 {
 }
 
 .titre_act {
-    padding-left: 20px;
+    padding-left: 13px;
     padding-right: 5px;
-    padding-bottom: 5px;
-    font-size: 0.75em;
+    font-size: 0.7em;
     font-weight: bold;
 }
 
@@ -435,6 +461,24 @@ footer li {
         display: none;
     }
 
+    #titre {
+        padding-bottom: 15px;
+    }
+
+    #filtres {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .categories {
+        gap: 15px;
+    }
+
+    .visuel {
+        margin: 0;
+        margin-right: 12px;
+    }
+
     #hebergements_populaire {
         display: flex;
         flex-direction: column;
@@ -463,18 +507,12 @@ footer li {
         gap: 25px;
     }
 
-    #activites {
-        margin-right: 40px;
-        margin-left: -50px;
-    }
-
-    .act {
-        height: 50%;
-        width: 120%;
-    }
+   .fa-chart-line {
+    padding-right: 10px;
+   }
 
     #afficher_plus {
-        font-size: 0.6em;
+        font-size: 0.8em;
         font-weight: bold;
     }
 }
@@ -483,15 +521,28 @@ footer li {
 @media screen and (max-width: 768px) {
 
 
+    body {
+        margin: 0 auto;
+        padding: 0;
+    }
+
     nav {
         display: flex;
         flex-direction: column;
     }
 
 
+    nav p {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .logo {
         height: 2em;
         justify-content: center;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     ul.menu {
@@ -519,8 +570,8 @@ footer li {
 
     
     #recherche {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding: 0;
+        margin: 20px;
     }
 
     .formulaire {
@@ -532,6 +583,7 @@ footer li {
     }
 
     .recherche_mobile {
+        width: 50px;
         display: unset;
         margin-left: -20px;
         border: none;
@@ -543,13 +595,14 @@ footer li {
     }
 
     input {
-        width: 70%;
+        width: 75%;
     }
 
 
 
     #filtres_info {
-        padding-left: 10px;
+    padding: 0;
+    margin: 20px;
     }
 
     #titre {
@@ -565,6 +618,24 @@ footer li {
 
     .visuel {   
         margin-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 36%;
+        padding-right: 25px;
+    }
+
+    #categories p {
+        font-size: 0.9em;
+        padding: 0;
+        padding-left: 5px;
+        margin: auto;
+        width: fit-content;
+    }
+
+    .icones {
+        padding: 0;
+        margin-top: 13px;
+        margin-bottom: 13px;
     }
 
 
@@ -572,15 +643,22 @@ footer li {
         display: flex;
         flex-direction: column-reverse;
         padding: 0;
+        margin: 0 auto;
+        width: 100%;
+        margin-bottom: 45px;
     }
 
     #populaire {
-        width: 100%;
+        margin: 0 auto;
+        padding: 0;
         border-radius: 0px;
+        padding-bottom: 30px;
     }
 
     #popu {
-        padding-left: 13px;
+        padding-left: 25px;
+        padding-bottom: 15px;
+        padding-top: 15px;
     }
 
     #resultats_popu {
@@ -589,15 +667,15 @@ footer li {
     }
 
     .choix_popu {
-        width: 90%;
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-bottom: -15px;
+        width: 85%;
+        margin: 0 auto;
     }
 
     #hebergements {
+        display: block;
         background-color: transparent;
-        width: 100%;
+        margin: 0 auto;
+        padding: 0;
     }
 
     #ville {
@@ -607,23 +685,27 @@ footer li {
     #resultats {
         display: flex;
         flex-direction: column;
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
     }
 
     .choix {
-        width: 90%;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin: 0 auto;
+        width: 85%;
         margin-bottom: 25px;
     }
 
+
     #afficher_plus {
         font-size: 1.1em;
+        padding-left: 20px;
     }
 
 
     #activites {
-        margin-left: -100px;
-        margin-top: -60px;
+        margin: 0 auto;
+        padding: 0;
     }
 
     #titre_activites {
@@ -633,15 +715,16 @@ footer li {
     #differentes_activites {
         display: flex;
         flex-direction: column;
+        padding: 0;
+        margin: 0 auto;
         width: 100%;
-        height: 100%;
-        padding-left: 37px;
     }
 
     .act {
-        margin-left: -18px;
-        width: 95%;
-        margin-bottom: -25px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        width: 85%;
+        height: auto;
     }
 
     .act img {
@@ -651,11 +734,18 @@ footer li {
 
     footer {
         margin-left: 0;
-        margin-left: -15px;
         margin-right: 0;
-        padding-right: 35px;
         width: 100%;
         flex-direction: column;
+    }
+
+    footer h3 {
+        font-size: 1.1em;
+    }
+
+    footer a {
+        font-size: 1.2em;
+        font-weight: 200;
     }
 
     .bdp {
